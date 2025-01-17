@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import LoginForm from '../components/PrijavaForm/PrijavaForm';
+import LoginForm from '../../components/PrijavaForm/PrijavaForm';
 import { jwtDecode } from 'jwt-decode';
-import TVPrograms from '../components/TVPrograms/TVPrograms';
+import Movies from '../../components/Movies/Movies';
 
-export const Home = ({loginDialogOpen, setLoginDialogOpen}) => {
+export const Home = ({loginDialogOpen,setLoginDialogOpen,filterOpen,searchValue}) => {
 
   const navigate = useNavigate();
 
@@ -50,7 +50,7 @@ export const Home = ({loginDialogOpen, setLoginDialogOpen}) => {
                 <LoginForm loginDialogOpen={loginDialogOpen} setLoginDialogOpen={setLoginDialogOpen}/>
             </div>
         )}
-        <TVPrograms/>
+        <Movies filterOpen={filterOpen} searchValue={searchValue}/>
     </> 
   );
 }
