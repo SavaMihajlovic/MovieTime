@@ -1,0 +1,13 @@
+MATCH (u:User {Email: "m.sava017@gmail.com"})
+MATCH (m:Movie {Name: "Interstellar"})
+CREATE (u)-[:RATED {
+  Score: 7.5,
+  Feedback: "OK"
+}]->(m)
+
+MATCH (u:User {Email: "peraperic@gmail.com"})
+MATCH (m:Movie {Name: "Interstellar"})
+CREATE (u)-[:RATED {
+  Score: 7.5,
+  Feedback: "OK"
+}]->(m)

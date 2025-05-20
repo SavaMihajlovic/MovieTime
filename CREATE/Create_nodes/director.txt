@@ -1,0 +1,2 @@
+CREATE(:Director {DateOfBirth: '1978-09-03',MoviesMade: 20,FirstName: 'Sam' ,LastName: 'Esmail'});
+CREATE(:Director {DateOfBirth: '1970-12-20',FirstName: 'Todd' ,MoviesMade: 13,LastName: 'Phillips'});

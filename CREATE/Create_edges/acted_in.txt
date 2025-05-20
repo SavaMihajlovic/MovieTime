@@ -1,0 +1,19 @@
+
+MATCH (a:Actor) where a.FirstName = "Rami" and a.LastName = "Malek"
+MATCH (tv:TVShow) where tv.Name = "Mr. Robot"
+CREATE (a)-[:ACTED_IN {
+  RoleType: "MainCharacter"
+}]->(tv)
+
+MATCH (a:Actor) where a.FirstName = "Jason" and a.LastName = "Statham"
+MATCH (m:Movie) where m.Name = "Wrath of man"
+CREATE (a)-[:ACTED_IN {
+  RoleType: "MainCharacter"
+}]->(m)
+
+MATCH (a:Actor) where a.FirstName = "Jason" and a.LastName = "Statham"
+MATCH (m:Movie) where m.Name = "Beekeeper"
+CREATE (a)-[:ACTED_IN {
+  RoleType: "Lead Role"
+}]->(m)
+

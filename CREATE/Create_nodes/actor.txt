@@ -1,0 +1,3 @@
+CREATE(:Actor {DateOfBirth: '1967-08-26',Awards: ['Best Actor in an Action Movie'],FirstName: 'Jason',LastName: 'Statham'});
+CREATE(:Actor {DateOfBirth: '1990-04-15',Awards: [],FirstName: 'Emma',LastName: 'Watson'});
+CREATE(:Actor {DateOfBirth: '1981-05-12',Awards: [],FirstName: 'Rami',LastName: 'Malek'});

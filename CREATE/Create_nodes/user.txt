@@ -1,0 +1,3 @@
+CREATE (:User {Email: 'peraperic@gmail.com', TypeOfUser: 'user', FirstName: 'Pera', LastName: 'Peric', Password: '$2a$11$pPpV9vxAfxr.2x0YBK2IMOqd5EFDO3MWmrlx26m/11lM9O.LwPs4W'});
+CREATE (:User {Email: 'm.sava017@gmail.com', TypeOfUser: 'admin', FirstName: 'Sava', LastName: 'Mihajlovic', Password: '$2a$11$7T/opuAubck9hBvbjq1AhOTxKUozY6MJYIbEaW2K.4IjuaeBBgsqK'});
+CREATE (:User {TypeOfUser: 'user', Email: 'andrija@gmail.com', FirstName: 'Andrija', LastName: 'Antic', Password: '$2a$11$ARis39sMwBHIqMV1PMtiSO7lUOnNUh9nq9P.Ol5ijccSgHILEIp3m'});

@@ -1,0 +1,3 @@
+MATCH (d:Director) where d.FirstName = "Todd" and d.LastName = "Phillips"
+MATCH (m:Movie) where m.Name = "Joker"
+CREATE (d)-[:DIRECTED_IN ]->(m)

@@ -1,0 +1,11 @@
+MATCH (u : User) where u.Email = "andrija@gmail.com"
+MATCH (m : Movie) Where m.Name = "Beekeeper"
+CREATE(u) -[:FAVORITE]->(m)
+
+MATCH (u : User) where u.Email = "peraperic@gmail.com"
+MATCH (m : Movie) Where m.Name = "Beekeeper"
+CREATE(u) -[:FAVORITE]->(m)
+
+MATCH (u : User) where u.Email = "peraperic@gmail.com"
+MATCH (tv : TVShow) Where tv.Name = "Money Heist"
+CREATE(u) -[:FAVORITE]->(tv)
